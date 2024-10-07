@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- c'est le titre de page -->
+    <title>Documentrr</title>
+    <!-- iconed dde l'onglet -->
+    <link rel="sortcut icon" href="./logo_head.png" />
+  </head>
+  <body>
+    <nav></nav>
+      <!-- UL=Unorder Liiste -->
+      <ul>
+        <li>Accueil</li>
+        <li>Boutique</li>
+        <li> 
+          <a href="#form">Formulaire</a>
+        
+        </li>
+      </ul>
+    </nav>
+     <header>
+      <!-- un seul H1 par page  -->
+      <h1>Ceci et le titre principal COURS DE HTML</h1>
+      <p>
+      Text clasique <em> text en italique</em> <strong> text en gras</strong>
+      </p>
+      <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo fugiat nostrum similique, expedita amet rem reprehenderit. Esse sint itaque dignissimos maiores doloribus laboriosam eum, atque architecto delectus ipsam ab sit amet similique voluptatem quidem quas adipisci repellat, et ex? Quaerat optio saepe perferendis quas provident perspiciatis accusantium dignissimos omnis repellat.
+
+        .</p>
+     </header>
+     <main>
+<section>
+  <ol>
+    <h2>Ordered List</h2>
+    <li>ceci est une </li>
+    <li> liste </li>
+    <li> dans l'ordre</li>
+  </ol>
+</section>
+<!-- une nouvelle section image -->
+ <section>
+  <h3>Image en html</h3>
+  <img src="./bg1.jpg" alt="image-section" height="200">
+  <!-- ALT de l'image c'est pour l'accessibilté -->
+   
+     <div>
+            <!-- Faire le tableau en html  -->
+      <table border="2" cellspadding="10" cellspacing="2" style=text-align:center">
+          <!-- <thead est pour l'entete du tableau> -->
+            <thead>
+              <tr>
+                <th>Colonne1</th>
+                <th>Colonne2</th>
+                <th>Colonne3</th>
+              
+              </tr>
+              <tbody>
+                <tr>
+                  <td rowspan="0">cell 1</td>
+                  <td> cell 2</td>
+                  <td> cell 3</td>               
+               </tr>
+               <tr></tr>
+                  <td colspan="2"> cell 4</td>
+               </tr>
+               
+            </tbody>
+            </thead>
+
+           </table>
+     </div>
+     <br>
+     <div></div>
+            <!-- Faire le tableau en html  -->
+      <table border="2" cellspadding="10" cellspacing="2" style=text-align:center">
+          <!-- <thead est pour l'entete du tableau> -->
+            <thead>
+              <tr>
+                <th>Colonne1</th>
+                <th>Colonne2</th>
+                <th>Colonne3</th>
+                <th>Colonne4</th>
+              </tr>
+              <tbody>
+                <tr>
+                  <td rowspan="0">cell 1</td>
+                  <td> cell 2</td>
+                  <td> cell 3</td>
+                  <td rowspan="0"> cell 4</td>                  
+               </tr>
+               <tr></tr>
+                  <!-- <td >cell 5</td>  -->
+                  <td> cell 6</td>
+                  <td > cell 7</td>
+                  <!-- <td > cell 8</td>                   -->
+               </tr>
+               <tr></tr>
+                  <!-- <td >cell 9</td>  -->
+                  <td colspan="2"> cell 10</td>
+                   <!-- <td> cell 11</td> -->
+                  <!-- <td> cell 12</td>                  -->
+               </tr>
+            </tbody>
+            </thead>
+
+           </table>
+     </div>
+     <div>
+      <h5><span>&#8594;</span>Les liens</h5>
+      <!-- Pour ouvrir dans le meme onglet  -->
+       Ouvrire dans le meme ongle :
+      <a href="https://htmlcheatsheet.com"> HTML cheat sheet</a>
+      <br>
+      <!-- Pour ouvrir dans un autre onglet 
+        blank permet de créer un nouveau onglet -->
+       Ouvrire dans un autre ongle : 
+       <a href="https://htmlcheatsheet.com" target="_blank"> HTML cheat sheet</a>
+     </div>
+     
+     <div>
+      <h6><i>&#128053;</i> Vidéo Les animeaux</h6>
+      <video src="./video_aninaux.mp4" autoplay muted loop height="200"></video>
+    </div>
+ </section>
+
+ <section id="form" style="background-color: aqua;border: 3px; text-justify: ; border-radius: 20px; padding: 10px;">
+  <h2>Les formulaires</h2>
+  <form action="" >
+    <!-- for et id permettent de lier le label à l'input -->
+    <label for="name">Nom et prénoms</label>
+    <input type="text" id="name" placeholder="Entrer votre nom" style="border-radius: 5px;">
+    <br>
+    <label for="date">Date de naissance</label>
+    <input type="date" id="date" style="border-radius: 5px;">
+    <br>
+    <label for="age">Age</label>
+    <input type="number" id="age" placeholder="Entrer votre age" value="18" >
+    <br>
+    <!-- input de type select  -->
+     <label for="gender">Genre</label>
+     <select name="gender" id="gender">
+      <option value="homme">Homme</option>
+      <option selected="selected" value="""femme">Femme</option>
+      <option value="autre">Autre</option>
+     </select>
+     <!-- input de type select  -->
+      <div>
+        <input type="radio" name="type" id="human">
+        <label for="human">Humain</label selected=>
+
+        <input type="radio" name="type" id="dog">
+        <label for="dog">Chien</label>
+
+         <input type="radio" name="type" id="cat">
+        <label for="cat">Chat</label>
+      </div>
+      <!-- la balise div renvoie à la ligne  -->
+       <div>
+        
+        <textarea name="email" id="email" placeholder="Votre massage...." cols="30" rows="10"></textarea>
+        <!-- input de type checkbox  -->
+        <br>
+          <input type="checkbox" name="" id="cgv">
+          <label for="cgv"> Acceptez vous les conditions générales</label>
+      
+       </div>
+       <!-- input de type submit permet de valider  -->
+       <input type="submit" value="Ceci est un button pour valider le formulaire">
+  </form>
+  <button onclick="SubmitEvent">Envoyer</button>
+ </section>
+     </main>
+<!-- Mail et evoie de fichier  -->
+     <footer>
+   <a href="mailto:balevictorien@yahoo.fr">Contactez moi !</a>
+   <br>
+        <a href="./Notice.txt" download="Notice"> Télécharger la notice</a>
+     </footer>
+    
+    <div></div>
+  </body>
+</html>
